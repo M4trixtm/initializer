@@ -28,6 +28,9 @@ buildscript {
         // Network
         retrofit_version = '2.9.0'
         okhttp_version = '4.9.1'
+
+        // Database
+        room_version = '2.3.0'
     }
     repositories {
         google()
