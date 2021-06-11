@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdk 30
-    buildToolsVersion "30.0.3"
+    compileSdk rootProject.compile_sdk_version
+    buildToolsVersion rootProject.build_tools_version
 
     defaultConfig {
         applicationId "github.m4trixtm.initializer"
-        minSdk 21
-        targetSdk 30
+        minSdk rootProject.min_sdk_version
+        targetSdk rootProject.target_sdk_version
         versionCode 1
         versionName "1.0"
 
@@ -54,7 +54,7 @@ dependencies {
     implementation "androidx.activity:activity-compose:$activity_compose_version"
 
     implementation "com.google.android.material:material:$material_version"
-    
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
