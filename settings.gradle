@@ -8,4 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "initializer"
 include ':app'
+include ':library:extensions'
 include ':common:network'
